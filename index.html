@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stargate Background</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="addresses.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <img id="portal" src="EVENT-HORIZON.gif">
+            <div class="interface">
+                <img class="logo" src="SGC-LOGO.png">
+    
+                <div class="lights">
+                    <div id="light-1" class="light"></div>
+                    <div id="light-2" class="light"></div>
+                    <div id="light-3" class="light"></div>
+                </div>
+    
+                <div class="binaries">
+                    <div id="binary-1" class="binary"></div>
+                    <div id="binary-2" class="binary"></div>
+                </div>
+    
+                <div id="light-4"></div>
+    
+                <div class="status-list">
+                    <div id="status-1" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">1</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-2" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">2</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-3" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">3</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-4" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">4</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-5" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">5</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-6" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">6</div>
+                        <div class="label">KO</div>
+                    </div>
+                    <div id="status-7" class="status">
+                        <div class="ko engaged"></div>
+                        <div class="ok"></div>
+                        <div class="number">7</div>
+                        <div class="label">KO</div>
+                    </div>
+                </div>
+    
+                <div class="chevrons">
+                    <div class="chevrons-content">
+                        <div id="chevron-1" class="chevron"></div>
+                        <div id="chevron-2" class="chevron"></div>
+                        <div id="chevron-3" class="chevron"></div>
+                        <div id="chevron-4" class="chevron"></div>
+                        <div id="chevron-5" class="chevron"></div>
+                        <div id="chevron-6" class="chevron"></div>
+                        <div id="chevron-7" class="chevron"></div>
+                        <div id="circle">
+                            <div id="point"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="message" class="blink">
+                    <span>IDLE</span>
+                </div>
+
+                <div id="planetName">
+                    <span></span>
+                </div>
+    
+                <div class="symbols">
+                    <div id="symbol-1" class="symbol" onclick="stargate.onClickSymbol(0)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-2" class="symbol" onclick="stargate.onClickSymbol(1)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-3" class="symbol" onclick="stargate.onClickSymbol(2)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-4" class="symbol" onclick="stargate.onClickSymbol(3)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-5" class="symbol" onclick="stargate.onClickSymbol(4)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-6" class="symbol" onclick="stargate.onClickSymbol(5)">
+                        <span>+</span>
+                    </div>
+                    <div id="symbol-7" class="symbol" onclick="stargate.onClickSymbol(6)">
+                        <span>+</span>
+                    </div>
+                </div>
+
+                <div id="symbolSelection">
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>A</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>B</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>C</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>D</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>E</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>F</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>G</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>H</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>I</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>J</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>K</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>L</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>M</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>N</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>O</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>P</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>Q</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>R</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>S</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>T</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>U</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>V</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>W</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>X</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>Y</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>Z</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>a</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>b</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>c</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>d</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>e</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>f</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>g</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>h</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>i</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>j</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>k</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>l</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>m</span>
+                    </div>
+                    <div onclick="stargate.onChooseSymbol(this.firstElementChild.innerHTML)">
+                        <span>n</span>
+                    </div>
+                </div>
+
+                <div id="light-5"></div>
+            </div>
+        </div>
+    </body>
+</html>
